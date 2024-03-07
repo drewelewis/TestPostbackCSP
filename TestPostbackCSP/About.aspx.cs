@@ -18,7 +18,24 @@ namespace TestPostbackCSP
 
             if (IsPostBack == true)
             {
-                MessageBox.Show("Posted back!");
+                //MessageBox.Show("Posted back!");
+                if (DropDownList1.SelectedValue == "yes")
+                {
+                    UpdatePanel1.Visible = true;
+                }
+                else
+                {
+                    UpdatePanel1.Visible = false;
+                }
+
+                if (DropDownList2.SelectedValue == "yes")
+                {
+                    UpdatePanel2.Visible = true;
+                }
+                else
+                {
+                    UpdatePanel2.Visible = false;
+                }
             }
         }
 
